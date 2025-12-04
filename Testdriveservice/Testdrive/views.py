@@ -46,9 +46,10 @@ class GetAllUserDrives(APIView):
         try:
             user_obj = TestDrive.objects.filter(seller_id=id)
             print('user_obj',  user_obj)
+            serializer_class = TestDriveSerializer(user_obj,many=True)
+            print(serializer_class.data)
+            return Response(serializer_class.data, status=status.HTTP_200_OK)
         except TestDrive.DoesNotExist:
             return Response({'message': 'TestDrives not found'}, status=404)
-        serializer_class = TestDriveSerializer(user_obj,many=True)
-        print(serializer_class.data)
-        return Response(serializer_class.data, status=status.HTTP_200_OK)
+        
     
