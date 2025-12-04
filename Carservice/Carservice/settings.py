@@ -36,11 +36,6 @@ SIMPLE_JWT = {
 
 }
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = ['Jayaprak.pythonanywhere.com']
-
 
 # Application definition
 
@@ -183,11 +178,17 @@ REST_FRAMEWORK ={
 }
 
 
-CORS_ALLOWED_ORIGIN = ["http://localhost:5173","http://127.0.0.1:5173"]
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
 
-CORS_ALLOW_ALL_ORIGINS = True
+ALLOWED_HOSTS = ['Jayaprak.pythonanywhere.com','.pythonanywhere.com']
+
+CORS_ALLOWED_ORIGINS = ["http://localhost:5173","http://127.0.0.1:5173","https://automarketfronend.onrender.com",]
+
 
 CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_ALL_ORIGINS = False
 
 CORS_ALLOW_METHODS = ['OPTIONS','GET','POST','PUT','PATCH','DELETE']
 
