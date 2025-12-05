@@ -11,3 +11,9 @@ urlpatterns = [
     path('login/',views.LoginView.as_view(),name='login'),
     # path('bgh/', router.urls),
 ]
+
+# {
+#     "email": "ramay@gmail.com",
+#     "password": "Rama@123"
+# }
+

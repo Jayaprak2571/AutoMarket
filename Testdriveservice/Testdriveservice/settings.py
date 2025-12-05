@@ -163,7 +163,7 @@ REST_FRAMEWORK = {
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['Jayaprak.pythonanywhere.com','.pythonanywhere.com']
+ALLOWED_HOSTS = ['Jayapraky.pythonanywhere.com','.pythonanywhere.com']
 
 CORS_ALLOWED_ORIGINS = ["http://localhost:5173","http://127.0.0.1:5173","https://automarketfronend.onrender.com",]
 
